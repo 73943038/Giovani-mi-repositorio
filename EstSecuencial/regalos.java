@@ -1,11 +1,11 @@
 
 import  java.util.Scanner ;
 
- regalos de clase  pública {
+ regalos de clase  publica {
 
- escáner estático sc =  nuevo  escáner ( System . in);
+ escaner estatico sc =  nuevo  escaner ( System . in);
 
- algoritmoRegalos vacío  estático () {
+ algoritmoRegalos vacío  estatico () {
   // Definir variables
   monto doble = 0 ;
   String regalo = " " ;
@@ -15,13 +15,13 @@ import  java.util.Scanner ;
   // Proceso
   if (monto > = 1  && monto <= 10 ) {
     regalo = " \ n Tarjeta " ;    
-  } más  si (monto > = 11  && monto <= 100 ) {
+  } mas  si (monto > = 11  && monto <= 100 ) {
     regalo = " \ n Chocolate \ n Tarjeta " ;
-  } más  si (monto > = 101  && monto <= 250 ) {
+  } mas  si (monto > = 101  && monto <= 250 ) {
     regalo = " \ n Flores \ n Chocolate \ n Tarjeta " ;
-  } más  si (monto > 250 ) {
+  } mas  si (monto > 250 ) {
     regalo = " \ n Anillo \ n Flores \ n Chocolate \ n Tarjeta " ;
-  } más {
+  } mas {
     regalo = " Ninguno " ;
   }
   // Datos de salida
@@ -29,7 +29,7 @@ import  java.util.Scanner ;
 }
 
 
- pagoPolizas vacío  estático () {
+ pagoPolizas vacio  estatico () {
   // Declarar Variebles
   Plan de cuerdas , alcohol, lentes, enfermedad;
   int edad;
