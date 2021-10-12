@@ -1,33 +1,39 @@
 import java.util.Scanner;
-public class operacion9{
+public class operacion11{
   static Scanner sc = new Scanner(System.in);
-  static void algoritopolizaGCY(){
+  static void TrabajadoresGCY(){
     // definir variables
-    double monto =0;
-    String plan, alcohol, lentes, enfermedad;
-    int edad;
-    double costoPago, recargos=0;
+    int antiguedad =0;
+    String  bono ="";
     //datos de entrada
-    System.out.println("Ingrese el plan (A/B): ");
-    plan=sc .next();  
-    System.out.println("Ingrese el alcohol (S/N): ");
-    alcohol=sc .next(); 
-    System.out.println("Usa lentes (S/N): ");
-    lentes=sc .next(); 
-    System.out.println("Tiene alguna enfermedad (S/N): ");
-    enfermedad=sc .next(); 
-    System.out.println("Ingrese su edad?: ");
-    edad=sc.nextInt(); 
+    System.out.println("Ingrese los años esta trabajando como empleado");
+    antiguedad=sc .nextInt();  
     //proceso
-    if(alcohol.equals("S")){recargos+=0.10;}
-    if(lentes.equals("S")){recargos+=0.05;}
-    if(enfermedad.equals("S")){recargos+=0.10;}
-    if(edad>40){recargos+=0.20;}else{recargos+=0.10;}
-    if(plan.equals("A")){ costoPago=1200+1200*recargos;} else {costoPago=950+950*recargos;}
+    if (antiguedad>=1 && antiguedad<=1){
+      bono="$100";
+    }
+   else if (antiguedad>=2 && antiguedad<=2){
+      bono="$200";
+    }
+    else if(antiguedad>=3 && antiguedad<=3){
+      bono="$300";
+      }
+   else if(antiguedad>=4 && antiguedad<=4){
+      bono="$400";
+   }
+   else if(antiguedad>=5 && antiguedad<=5){
+      bono="$500";
+   }
+    else if(antiguedad>5){
+      bono="$1000";
+   }
+   else{
+      bono="Ninguno";
+   }
     //datos de salida
-    System.out.println("Usted debe de pagar el monto de: $ "+costoPago );
+    System.out.println("Por el tiempo de sus servicios usted tiene un bono de :"+bono);
   }
-  public static void main(String[] arg){
-  algoritopolizaGCY();
-}
+    public static void main(String[] arg){
+    TrabajadoresGCY();
+  }
 }
