@@ -1,0 +1,3 @@
+giovani	123456	VENDEDOR
+Giovani2	chunca	Vendedor
+giovani123	14789	ADMINISTRADOR
